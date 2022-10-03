@@ -22,7 +22,7 @@ class AdminLTEPublisher extends Publisher
      *
      * @var string
      */
-    protected $destination = FCPATH . 'adminlte';
+    protected $destination = FCPATH . 'assets/adminlte';
 
     /**
      * Use the "publish" method to indicate that this
@@ -33,6 +33,7 @@ class AdminLTEPublisher extends Publisher
         return $this
             // Add all the files relative to $source
             ->addPath('dist')
+            ->addPath('plugins')
 
             // Merge-and-replace to retain the original directory structure
             ->merge(true);
