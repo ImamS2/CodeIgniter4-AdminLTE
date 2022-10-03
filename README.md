@@ -2,6 +2,8 @@
 
 Just run :
 
+`composer update`
+
 `php spark key:generate`
 
 `php spark publish`
