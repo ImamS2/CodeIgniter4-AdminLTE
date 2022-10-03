@@ -4,6 +4,12 @@ Just run :
 
 `composer update`
 
-`php spark key:generate`
+`cd public`
+`mkdir assets`
+`cd assets`
+`mkdir adminlte`
+`cd ../..`
+
+`php spark key:generate` (Optional)
 
 `php spark publish`
