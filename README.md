@@ -2,17 +2,11 @@
 
 Just run :
 
-`composer update`
+`composer update` for get Codeigniter 4 from composer
 
-`cd public`
-`mkdir assets`
-`cd assets`
-`mkdir adminlte`
-`cd ../..`
+`php spark publish:theme`
+and select theme ( for now, it just adminlte only, other just a dummy)
 
 `php spark key:generate` (Optional)
 
-`php spark publish`
-
 It may take a little long time, just drink your coffee until it finish.
-Just ignore error txt format from plugins.
