@@ -157,8 +157,6 @@ class PublishThemeCommand extends BaseCommand
             return;
         }
 
-
-
         CLI::wait(10, false);
         CLI::clearScreen();
     }
