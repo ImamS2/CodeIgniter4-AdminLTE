@@ -68,15 +68,7 @@ class PublishThemeCommand extends BaseCommand
             'adminlte' => [
                 'source' => ROOTPATH . 'vendor/almasaeed2010/adminlte/',
                 'folders' => ['dist', 'plugins'],
-            ],
-            'sbadmin' => [
-                'source' => ROOTPATH . 'vendor/sbadmin',
-                'folders' => ['dist'],
-            ],
-            'mazer' => [
-                'source' => ROOTPATH . 'vendor/mazer',
-                'folders' => ['dist'],
-            ],
+            ]
         ];
         $listThemes = array_keys($themes);
         $name = (count($params) < 1) ? CLI::prompt('Select your desired theme', $listThemes, ['required', 'in_list[' . implode(',', $listThemes) . ']']) : $params[0];
